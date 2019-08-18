@@ -1,15 +1,15 @@
-* {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     position: absolute;
     background-image: url("webdevchallenge 1/images/background_header.jpg");
     background-size: auto 90vh;
     background-position-x: 56.3vw;
-    background-position-y: -3.5vw;
+    background-position-y: -3vw;
     background-repeat: no-repeat;
+    font-size: 16px;
+    /*width: 55vw;
+    height: auto;*/
 }
 
 .trapecio {
@@ -19,40 +19,87 @@ body {
     border-left: none;
     border-right: 150px solid transparent;
     width: 55vw;
+    height: auto;
 }
 
 .header {
     position: relative;
-    left: 80px;
+    width: 100vh;
+    left: 0;
     margin-top: 50px;
     z-index: 1000;
     /*cambia la posición de los elementos en relación a frente y fondo*/
 }
 
-#navegation {
-    position: relative;
-    left: 800px;
-    margin-top: 0px;
-    border: 1px solid whitesmoke;
-    background-color: whitesmoke;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+.logo {
+    width: 20%;
+    height: auto;
 }
 
-a {
+.barraNavegacion {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #0000009e;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.barraNavegacion--link {
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.barraNavegacion--link:hover, 
+.barraNavegacion--link:visited,
+.barraNavegacion--link:active
+{
+    color:rgba(0, 0, 0, 0.466);
 }
 
-footer {
+.footer {
     background-color: #30343F;
-    position: relative;
+    position: fixed;
     height: 80px;
-    width:1500px;
+    width: 100vw;
     right: 0;
     margin: 0;
-    bottom:0
+    bottom: 0
+}
+
+.footer--list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer--item {
+    display: inline-block;
+    /* cual es la diferencia entre display block y display inline-block? e block ocupa el 100% del ancho del padre, encambio el inline-block se ajusta al contenido*/
+    color: rgba(255, 255, 255, 0.705);
+    width: 32%;
+    margin-top: 0.5em;
+}
+
+.footer--icon {
+    width: auto;
+    height: 2em; /*em = por defecto será el tamaño de la fuente que proviene del padre*/
+}
+
+.footer--itemText{
+    display: inline-block;
 
 }
-    
+
+.footer--itemTextFila {
+    display: block;
+    text-align:left;
+
+}
+
+.footer--itemTextFila.strong {
+    font-weight: bold;
+    color: white;
+}
