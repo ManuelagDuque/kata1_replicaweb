@@ -7,7 +7,7 @@
     <!--permite caracteres particulares-->
     <meta name="vieport" content="width=device-width, initial-scale=1.0">
     <!--responsive-->
-    <title>cata_1</title>
+    <title>Kata_1</title>
     <link rel="stylesheet" href="kata1.css">
 
 </head>
@@ -16,24 +16,24 @@
 
     <header class="header">
 
-        <img src="webdevchallenge 1/images/logo.png" alt="logoDigitalElite">
-
-        <nav id="navegation">
-            <a href="">HOME</a>
-            <a href="">SERVICES</a>
-            <a href="">CLIENTS</a>
-            <a href="">CONTACT</a>
-        </nav>
+        <img src="webdevchallenge 1/images/logo.png" alt="logoDigitalElite" class="logo">
 
         <div>
             <p>
-                WE <b id="text">DIGITALISE</b> <br> YOUR BUSSINES PROCESS
+                WE <b class="text">DIGITALISE</b> <br> YOUR BUSSINES PROCESS
             </p>
 
             <button>
                 LEARN MORE
             </button>
         </div>
+
+        <nav class="barraNavegacion">
+            <a class="barraNavegacion--link" href="">home</a>
+            <a class="barraNavegacion--link" href="">services</a>
+            <a class="barraNavegacion--link" href="">client</a>
+            <a class="barraNavegacion--link" href="">contact</a>
+        </nav>
 
     </header>
 
@@ -44,23 +44,31 @@
 
     </main>
 
-    <footer>
-        <ul>
-            <li>
-                <img src="webdevchallenge 1/images/location.png" alt="iconoUbicacion">
+    <footer class="footer">
+        <ul class="footer--list">
+            <li class="footer--item">
+                <img class="footer--icon" src="webdevchallenge 1/images/location.png" alt="iconoUbicacion">
+                <div class="footer--itemText">
+                    <span class="footer--itemTextFila strong"> 8 </span>
+                    <span class="footer--itemTextFila"> located in 8 areas </span>
+                </div>
             </li>
-            <li> 8 </li>
-            <li> located in 8 areas </li>
-            <li>
-                <img src="webdevchallenge 1/images/customer.png" alt="iconoCliente">
+
+            <li class="footer--item">
+                <img class="footer--icon" src="webdevchallenge 1/images/customer.png" alt="iconoCliente">
+                <div class="footer--itemText">
+                    <span class="footer--itemTextFila strong"> 2450 </span>
+                    <span class="footer--itemTextFila">happy clients last year</span>
+                </div>
             </li>
-            <li> 2450 </li>
-            <li> happy clients last year </li>
-            <li>
-                <img src="webdevchallenge 1/images/experience.png" alt="iconoExperiencia">
+
+            <li class="footer--item">
+                <img class="footer--icon" src="webdevchallenge 1/images/experience.png" alt="iconoExperiencia">
+                <div class="footer--itemText">
+                    <span class="footer--itemTextFila strong"> 2935 </span>
+                    <span class="footer--itemTextFila">years of combined experience</span>
+                </div>
             </li>
-            <li> 2935 </li>
-            <li> years of combined experience </li>
         </ul>
     </footer>
 
