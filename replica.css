@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* por defecto 16px */
+  font-family: "Arimo", sans-serif;
+}
+
+.header {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+.header__izquierdo {
+  height: 100%;
+  width: 60%;
+  position: absolute; 
+  background-color: #DB5461;
+  clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+  z-index: 99;
+  /*top: 0;
+  border-bottom: 80vh solid #DB5461;
+  border-left: none;
+  border-right: 150px solid transparent;
+  /*height: auto;*/
+}
+
+.header__izquierdo img {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.header__izquierdo h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 74px;
+  margin: auto;
+  left: 10%;
+  color:white;
+}
+
+.header__izquierdo--text{
+  color: #30343F;
+}
+
+.header__izquierdo button {
+  position: absolute;
+  left: 10%;
+  top: 65%;
+  padding: 7px 40px;
+  border-radius: 20px;
+  border: 3px solid  #30343F;
+  box-shadow: 1px 1px 5px #0000009e;
+  text-align: center;
+  font-size: 15px;
+  outline:none;
+}
+
+.header__izquierdo button:hover,
+.header__izquierdo button:visited,
+.header__izquierdo button:active {
+  color: rgba(0, 0, 0, 0.466);
+}
+
+.header__derecho {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.header__derecho img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.header__derecho--barraNavegacion {
+  position: absolute;
+  right: 10%;
+  left: 40%;
+  top: 10%;
+  width: 300px;
+  background-color: white;
+  box-shadow: 1px 1px 5px #0000009e;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.header__derecho--barraNavegacion--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.header__derecho--barraNavegacion--link:hover,
+.header__derecho--barraNavegacion--link:visited,
+.header__derecho--barraNavegacion--link:active {
+  color: rgba(0, 0, 0, 0.466);
+}
+
+.footer {
+  background-color: #30343f;
+  position: fixed;
+  height: 20vh;
+  width: 100%;
+  right: 0;
+  margin: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.footer__list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__list--item {
+  display: inline-block;
+  /* cual es la diferencia entre display block y display inline-block?  block ocupa el 100% del ancho del padre, encambio el inline-block se ajusta al contenido*/
+  color: rgba(255, 255, 255, 0.705);
+  width: 30%;
+  margin-top: 2em;
+}
+
+.footer__list--item--icon {
+  width: auto;
+  height: 2.5em; /*em = por defecto será el tamaño de la fuente que proviene del padre*/
+}
+
+.footer__list--item--text {
+  display: inline-block;
+}
+
+.footer__list--item--text--fila {
+  display: block;
+  text-align: left;
+  font-size: 1em;
+}
+
+.footer__list--item--text--fila.strong {
+  font-weight: bold;
+  color: white;
+  font-size: 1.3em;
+}
